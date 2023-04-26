@@ -1,11 +1,11 @@
-.destacado {
-  margin-top: 2em;
-}
+
 
 .elemento {
-  background-image: url(https://firebasestorage.googleapis.com/v0/b/istateca.appspot.com/o/logos%2Ffondo-blanco.jpg?alt=media&token=c8998dec-d6d9-4e39-a6f4-7aff45ede80d);
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/su-banco.appspot.com/o/image-PhotoRoom.png-PhotoRoom.png?alt=media&token=e3e4512a-c4af-466e-bf91-56f2516dabcf);
   background-repeat: no-repeat;
   background-position: right;
+  
+  
 }
 
 .container-all{
@@ -142,4 +142,22 @@
 
 .sign-up a:hover {
   text-decoration: underline;
+}
+
+
+body {
+  background: linear-gradient(to right, #0099ff, #ffffff);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
