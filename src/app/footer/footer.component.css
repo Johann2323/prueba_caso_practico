@@ -1,177 +1,430 @@
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font: 11px "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.generic-anchor {
+  color: #8DB9ED;
+}
+.generic-anchor:visited {
+  color: #8DB9ED;
+}
+.generic-anchor:hover {
+  color: #ccc;
+}
+
+.flex-rw {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+main {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 10em "Oswald", sans-serif;
+  color: #9b9b9b;
+  line-height: 1;
+}
+
+footer {
+  background: #373737;
+  margin-top: auto;
+  width: 100%;
+}
+
+.footer-list-top {
+  width: 33.333%;
+}
+
+.footer-list-top > li {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.footer-list-header {
+  padding: 10px 0 5px 0;
+  color: #fff;
+  font: 2.3vw "Oswald", sans-serif;
+}
+
+.footer-list-anchor {
+  font: 1.3em "Open Sans", sans-serif;
+}
+
+.footer-social-section {
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 5px;
+  
+}
+
+.footer-social-section::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 10px;
+  border-top: 1px solid #ccc;
+  width: calc(100% - 20px);
+}
+
+.footer-social-overlap {
+  position: relative;
+  z-index: 2;
+  background: #373737;
+  padding: 0 20px;
+}
+
+.footer-social-connect {
+  display: flex;
+  align-items: center;
+  font: 3.5em "Oswald", sans-serif;
+  color: #fff;
+}
+
+.footer-social-small {
+  font-size: 0.6em;
+  padding: 0px 20px;
+}
+
+.footer-social-overlap > a {
+  font-size: 3em;
+}
+
+.footer-social-overlap > a:not(:first-child) {
+  margin-left: 0.38em;
+}
+
+.footer-bottom-section {
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.footer-bottom-section > div:first-child {
+  margin-right: auto;
+}
+
+.footer-bottom-wrapper {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.footer-address {
+  display: inline;
+  font-style: normal;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-list-header {
+    font-size: 2em;
+  }
+
+  .footer-list-anchor {
+    font-size: 1.1em;
+  }
+
+  .footer-social-connect {
+    font-size: 2.5em;
+  }
+
+  .footer-social-overlap > a {
+    font-size: 2.24em;
+  }
+
+  .footer-bottom-wrapper {
+    font-size: 1.3em;
+  }
+}
+@media only screen and (max-width: 568px) {
+  main {
+    font-size: 5em;
+  }
+
+  .footer-list-top {
     width: 100%;
-    height: 100%;
-    height: 5%;
-    background-color: #012844;
-    color: white;
-    text-align: center;
- }
- 
- * {
-    margin-top: 0;
+  }
+
+  .footer-list-header {
+    font-size: 3em;
+  }
+
+  .footer-list-anchor {
+    font-size: 1.5em;
+  }
+
+  .footer-social-section {
+    justify-content: center;
+  }
+
+  .footer-social-section::after {
+    top: 25%;
+  }
+
+  .footer-social-connect {
+    margin-bottom: 10px;
+    padding: 0 10px;
+  }
+
+  .footer-social-overlap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-social-icons-wrapper {
+    width: 100%;
     padding: 0;
-    box-sizing: border-box;
+  }
+
+  .footer-social-overlap > a:not(:first-child) {
+    margin-left: 20px;
+  }
+
+  .footer-bottom-section {
+    padding: 0 5px 10px 5px;
+  }
+
+  .footer-bottom-wrapper {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .footer-social-overlap > a {
+    margin: auto;
+  }
+
+  .footer-social-overlap > a:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .footer-bottom-rights {
+    display: block;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .footer-list-header {
+    font-size: 2.2em;
+  }
+
+  .footer-list-anchor {
+    font-size: 1.2em;
+  }
+
+  .footer-social-connect {
+    font-size: 2.4em;
+  }
+
+  .footer-social-overlap > a {
+    font-size: 2.24em;
+  }
+
+  .footer-bottom-wrapper {
+    font-size: 1.3em;
+  }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  height: 5%;
+  background-color: #012844;
+  color: white;
+  text-align: center;
+}
+
+* {
+  margin-top: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .contenedor-principal {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
 }
 
 .contenedor {
-    margin-top: 100px;
-    width: 100%;
-    display: flex;
-    max-width: max-content;
-   
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  max-width: max-content;
+ 
 }
 
 hr {
-    background-color: black;
-    height: 2px;
+  background-color: black;
+  height: 2px;
 }
 
 .tarjeta {
-    margin: 20px;
-    border-radius: 8px;
-    background: #012844;
-   
+  margin: 20px;
+  border-radius: 8px;
+  background: #012844;
+ 
 }
 
 .tarjeta .contenido {
-    margin: 30px;
+  margin: 30px;
 }
 
 .tarjeta .contenido .imagen {
-    align-content: center;
-    width: 350px;
-    height: 250px;
-    text-align: center;
+  align-content: center;
+  width: 350px;
+  height: 250px;
+  text-align: center;
 }
 h5{
-    text-align: center;
-    
-    box-shadow: 0px 1px 10px rgba(47, 25, 150, 0.2);
-    margin-top: 50px;
+  text-align: center;
+  
+  box-shadow: 0px 1px 10px rgba(47, 25, 150, 0.2);
+  margin-top: 50px;
 }
 
 .card-client {
-    background: transparent;
-    width: 13rem;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: 4px solid #7cdacc;
-    box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
-    border-radius: 10px;
-    text-align: center;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-    transition: all 0.3s ease;
-  }
-  
-  .card-client:hover {
-    transform: translateY(-10px);
-  }
-  
-  .user-picture {
-    overflow: hidden;
-    object-fit: cover;
-    width: 3rem;
-    height: 3rem;
-    border: 4px solid #7cdacc;
-    border-radius: 999px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
-  
-  .user-picture svg {
-    width: 2.5rem;
-    fill: currentColor;
-  }
-  
-  .name-client {
-    margin: 0;
-    margin-top: 20px;
-    font-weight: 600;
-    font-size: 18px;
-  }
-  
-  .name-client span {
-    display: block;
-    font-weight: 200;
-    font-size: 16px;
-  }
-  
-  .social-media:before {
-    content: " ";
-    display: block;
-    width: 100%;
-    height: 2px;
-    margin: 20px 0;
-    background: #7cdacc;
-  }
-  
-  .social-media a {
-    position: relative;
-    margin-right: 15px;
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .social-media a:last-child {
-    margin-right: 0;
-  }
-  
-  .social-media a svg {
-    width: 1.1rem;
-    fill: currentColor;
-  }
-  
-  /*-- Tooltip Social Media --*/
-  .tooltip-social {
-    background: #262626;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    padding: 0.5rem 0.4rem;
-    border-radius: 5px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    opacity: 0;
-    pointer-events: none;
-    transform: translate(-50%, -90%);
-    transition: all 0.2s ease;
-    z-index: 1;
-  }
-  
-  .tooltip-social:after {
-    content: " ";
-    position: absolute;
-    bottom: 1px;
-    left: 50%;
-    border: solid;
-    border-width: 10px 10px 0 10px;
-    border-color: transparent;
-    transform: translate(-50%, 100%);
-  }
-  
-  .social-media a .tooltip-social:after {
-    border-top-color: #262626;
-  }
-  
-  .social-media a:hover .tooltip-social {
-    opacity: 1;
-    transform: translate(-50%, -130%);
-  }
+  background: transparent;
+  width: 13rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 4px solid #7cdacc;
+  box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.card-client:hover {
+  transform: translateY(-10px);
+}
+
+.user-picture {
+  overflow: hidden;
+  object-fit: cover;
+  width: 3rem;
+  height: 3rem;
+  border: 4px solid #7cdacc;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.user-picture svg {
+  width: 2.5rem;
+  fill: currentColor;
+}
+
+.name-client {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.name-client span {
+  display: block;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.social-media:before {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 20px 0;
+  background: #7cdacc;
+}
+
+.social-media a {
+  position: relative;
+  margin-right: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-media a:last-child {
+  margin-right: 0;
+}
+
+.social-media a svg {
+  width: 1.1rem;
+  fill: currentColor;
+}
+
+/*-- Tooltip Social Media --*/
+.tooltip-social {
+  background: #262626;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 0.5rem 0.4rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -90%);
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+.tooltip-social:after {
+  content: " ";
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}
+
+.social-media a .tooltip-social:after {
+  border-top-color: #262626;
+}
+
+.social-media a:hover .tooltip-social {
+  opacity: 1;
+  transform: translate(-50%, -130%);
+}
