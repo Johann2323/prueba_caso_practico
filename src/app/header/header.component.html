@@ -1,36 +1,136 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+<body>
+  <div class="container">
+    <div class="row">
+      <nav class="navbar navbar-vertical-left" style="background-color: #4943B9;">
+        <ul class="nav navbar-nav">
+          <li>
+            <li>
+              <div >
+                <a  class="one" style="text-decoration: none;">
+                  <i class="fa fa-fw fa-lg fa-home" style="color: white;"></i> 
+                  <span style="color: white;">&nbsp;&nbsp;&nbsp;Home</span>
+                  </a>
+              </div>
+            </li>
+
+          <li>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                
+                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseCuatro"  style="background-color: transparent; color: white; border-color:transparent;" >
+                 <i class="fa-solid fa-file-circle-plus fa-xl" style="margin-left: -13%; color:white;"></i> &nbsp;&nbsp;&nbsp;Control
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseCuatro" class="accordion-collapse collapse ">
+                <div class="accordion-body" style="border: 1px solid #514BBB;">
+                  <a >
+                    <span>Asesor Financiero</span>
+                  </a>
+                  </div>
+              </div>
+
+              <div id="panelsStayOpen-collapseCuatro" class="accordion-collapse collapse ">
+                <div class="accordion-body">
+                  <a >
+                    <span>Sucursal</span>
+                  </a>
+                  </div>
+              </div>
+            </div>
+          </li>
+
+
+          <li>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                
+                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"  style="background-color: transparent; color: white; border-color:transparent;" >
+                  <i class="fa-solid fa-list fa-xl" style="margin-left: -14%; color:white;"></i> &nbsp;&nbsp;&nbsp;&nbsp;Listas
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse ">
+                <div class="accordion-body" style="border: 1px solid #514BBB;">
+                  <a >
+                    <span>Solicitudes</span>
+                  </a>
+                  </div>
+              </div>
+
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse ">
+                <div class="accordion-body">
+                  <a >
+                    <span>Personales</span>
+                  </a>
+                  </div>
+              </div>
+
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse ">
+                <div class="accordion-body">
+                  <a >
+                    <span>Clientes</span>
+                  </a>
+                  </div>
+              </div>
+
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse ">
+                <div class="accordion-body">
+                  <a >
+                    <span>Sucursales</span>
+                  </a>
+                  </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                
+                <button class="accordion-button one" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"  style="background-color: transparent; color: white; border-color:transparent;" >
+                  <i class="fa-regular fa-credit-card fa-xl" style="margin-left: -16%; color:white;"></i> &nbsp;&nbsp;&nbsp;Credito
+                </button>
+              </h2>
+
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse ">
+                <div class="accordion-body">
+                  <a >
+                    <span>Crear Credito</span>
+                  </a>
+                  </div>
+              </div>
+
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse ">
+                <div class="accordion-body">
+                  <a >
+                    <span>Listar Creditos</span>
+                  </a>
+                  </div>
+              </div>
+            </div>
+          </li>
+
+
+          <li>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                
+                <button class="accordion-button one" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTres"  style="background-color: transparent; color: white; border-color:transparent;" >
+                  <i class="fa-solid fa-file-lines fa-xl" style="margin-left: -13%; color:white;"></i> &nbsp;&nbsp;&nbsp;&nbsp;Informe
+                </button>
+              </h2>
+
+              <div id="panelsStayOpen-collapseTres" class="accordion-collapse collapse ">
+                <div class="accordion-body">
+                  <a >
+                    <span>Solicitudes</span>
+                  </a>
+                  </div>
+              </div>
+            </div>
+          </li>
+      
+        </ul>
+      </nav>
     </div>
   </div>
-</nav>
+</body>
