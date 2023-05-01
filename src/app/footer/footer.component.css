@@ -74,14 +74,7 @@ footer {
   font: 1.3em "Open Sans", sans-serif;
 }
 
-.footer-social-section {
-  width: 100%;
-  align-items: center;
-  justify-content: space-around;
-  position: relative;
-  margin-top: 5px;
-  
-}
+
 
 .footer-social-section::after {
   content: "";

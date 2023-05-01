@@ -1,0 +1,35 @@
+.card-title {
+  text-align: center;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #312B9A;
+  font-weight: bold;
+
+}
+
+.icono {
+  color: #4943b9;
+  margin: auto;
+  margin-top: 10%;
+}
+
+
+.card {
+  box-sizing: border-box;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+/* End Landing Page */

@@ -24,6 +24,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PersonaService } from './inicio-sesion/persona.service';
 
 import { AutocompleteLibModule } from 'angular-ng-autocomplete';
+import { HomeComponent } from './home/home.component';
+import { SegundoheaderComponent } from './segundoheader/segundoheader.component';
 
 
 @NgModule({
@@ -32,6 +34,8 @@ import { AutocompleteLibModule } from 'angular-ng-autocomplete';
     HeaderComponent,
     FooterComponent,
     InicioSesionComponent,
+    HomeComponent,
+    SegundoheaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,6 +46,7 @@ import { AutocompleteLibModule } from 'angular-ng-autocomplete';
     RouterModule.forRoot([
       
       {path: '', component: InicioSesionComponent,pathMatch:'full'},
+      {path: 'app-home', component: HomeComponent},
       
       
     ]),

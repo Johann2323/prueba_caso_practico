@@ -110,7 +110,7 @@
 }
 
 .button:focus {
-  color: #3498db;
+  color: #4943B9;
   box-shadow: inset 2px 2px 5px #BABECC,
              inset -5px -5px 10px #ffffff73;
 }
@@ -122,7 +122,7 @@
 }
 
 .sign-up a {
-  color: #3498db;
+  color: #4943B9;
   text-decoration: none;
 }
 
@@ -132,7 +132,7 @@
 
 
 body {
-  background: linear-gradient(to right, #0099ff, #ffffff);
+  background: linear-gradient(to right, #4943B9, #ffffff);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
   height: 100%;
